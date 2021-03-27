@@ -5,8 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emoji Translator</title>
         <link href="./emoji.png" rel="shortcut icon" type="image/jpg"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     </head>
     <body>
+        <div><button id = "thisButton">Help</button></div>
+        <div id = "myDIV"> 
+            <ol>
+                <li> Encode will print emoji in replacement of letters </li>
+                <li> Translate will print emoji in replacement of sentence </li>
+                <li> Madlib will print emoji in replacement of each word </li>
+                <li> Search will print a list of emojis in replacement of each letter/word </li>
+                <li> Random will execute any of the above </li>
+            </ol>
+        </div>
+
         <input type="text" id="translator-input">
         <button id="submit-button">Submit</button>
         <form>

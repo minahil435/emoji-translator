@@ -1,8 +1,12 @@
 const submitButton = document.querySelector("#submit-button")
 const inputText = document.querySelector("#translator-input")
 const outputText = document.querySelector("#results")
+const button = document.querySelector("#thisButton")
 
 submitButton.addEventListener("click", submitButtonPressed)
+//stretch goal
+inputText.addEventListener("keyup", submitButtonPressed)
+button.addEventListener("click", collasp)
 
 function submitButtonPressed() {
     const inputTextValue = inputText.value
@@ -40,6 +44,16 @@ function submitButtonPressed() {
         }
     }
 }
+
+//stretch goal
+function collasp() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 function dosearch(inputTextValue) {
     const emojiArray = search(inputTextValue)

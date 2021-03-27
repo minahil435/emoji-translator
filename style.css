@@ -1,3 +1,10 @@
-.radio-button {
+/* .radio-button {
     display: block;
+} */
+#thisButton{
+    background-color: red;
+}
+
+#myDIV{
+display :none;
 }
